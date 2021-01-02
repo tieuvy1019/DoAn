@@ -24,5 +24,13 @@ namespace DOAN
             b.ShowDialog();
             this.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Main m = new Main();
+            this.Hide();
+            m.ShowDialog();
+            this.Show();
+        }
     }
 }
