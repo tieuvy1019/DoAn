@@ -16,5 +16,13 @@ namespace DOAN
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            BanHang b= new BanHang();
+            this.Hide();
+            b.ShowDialog();
+            this.Show();
+        }
     }
 }

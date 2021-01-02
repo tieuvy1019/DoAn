@@ -1,6 +1,6 @@
 ﻿namespace DOAN
 {
-    partial class Form1
+    partial class BanHang
     {
         /// <summary>
         /// Required designer variable.
