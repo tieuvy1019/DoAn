@@ -80,12 +80,6 @@
     <Compile Include="FNV.Designer.cs">
       <DependentUpon>FNV.cs</DependentUpon>
     </Compile>
-    <Compile Include="formnhanvien.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="formnhanvien.Designer.cs">
-      <DependentUpon>formnhanvien.cs</DependentUpon>
-    </Compile>
     <Compile Include="HOADON.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
