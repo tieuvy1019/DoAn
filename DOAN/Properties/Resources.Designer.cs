@@ -104,6 +104,16 @@ namespace DOAN.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap KH {
+            get {
+                object obj = ResourceManager.GetObject("KH", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap thiet_ke_shop_thoi_trang {
             get {
                 object obj = ResourceManager.GetObject("thiet-ke-shop-thoi-trang", resourceCulture);
