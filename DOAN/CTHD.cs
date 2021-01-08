@@ -31,6 +31,7 @@ namespace DOAN
 
         public int? SOLUONG { get; set; }
 
+        public int? DONGIA { get; set; }
         public int? THANHTIEN { get; set; }
 
         public virtual NHANVIEN NHANVIEN { get; set; }
