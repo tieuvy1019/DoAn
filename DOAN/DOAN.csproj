@@ -39,11 +39,29 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Windows.11.0.3452\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Windows.11.0.3452\lib\net40\Microsoft.ReportViewer.DataVisualization.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Windows.11.0.3452\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Windows.11.0.3452\lib\net40\Microsoft.ReportViewer.WinForms.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.11.0.2\lib\net20\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -53,8 +71,23 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BCDT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BCDT.Designer.cs">
+      <DependentUpon>BCDT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BCSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BCSP.Designer.cs">
+      <DependentUpon>BCSP.cs</DependentUpon>
+    </Compile>
     <Compile Include="Chon.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,11 +107,28 @@
     <Compile Include="BanHang.Designer.cs">
       <DependentUpon>BanHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="demoDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>demoDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FDMK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDMK.Designer.cs">
+      <DependentUpon>FDMK.cs</DependentUpon>
+    </Compile>
     <Compile Include="FNV.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FNV.Designer.cs">
       <DependentUpon>FNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="FSP.cs">
       <SubType>Form</SubType>
@@ -104,15 +154,25 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SANPHAM.cs" />
+    <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="TAIKHOAN.cs" />
     <EmbeddedResource Include="BanHang.resx">
       <DependentUpon>BanHang.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="BCSP.resx">
+      <DependentUpon>BCSP.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Chon.resx">
       <DependentUpon>Chon.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FDMK.resx">
+      <DependentUpon>FDMK.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FNV.resx">
       <DependentUpon>FNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FSP.resx">
       <DependentUpon>FSP.cs</DependentUpon>
@@ -133,6 +193,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Report1.rdlc" />
     <None Include="DataSet1.xsc">
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </None>
@@ -143,6 +204,17 @@
     </None>
     <None Include="DataSet1.xss">
       <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="demoDataSet.xsc">
+      <DependentUpon>demoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="demoDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>demoDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="demoDataSet.xss">
+      <DependentUpon>demoDataSet.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -214,6 +286,28 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icon-04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anh-nen-dien-thoai-sieu-de-thuong_085452780.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\packages\Microsoft.SqlServer.Types.11.0.2\nativeBinaries\x64\msvcr100.dll">
+      <Link>SqlServerTypes\x64\msvcr100.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\packages\Microsoft.SqlServer.Types.11.0.2\nativeBinaries\x64\SqlServerSpatial110.dll">
+      <Link>SqlServerTypes\x64\SqlServerSpatial110.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\packages\Microsoft.SqlServer.Types.11.0.2\nativeBinaries\x86\msvcr100.dll">
+      <Link>SqlServerTypes\x86\msvcr100.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\packages\Microsoft.SqlServer.Types.11.0.2\nativeBinaries\x86\SqlServerSpatial110.dll">
+      <Link>SqlServerTypes\x86\SqlServerSpatial110.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\readme.htm" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

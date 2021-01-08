@@ -42,5 +42,45 @@ namespace DOAN
             f.ShowDialog();
             this.Show();
         }
+
+        private void đổiMậtKhẩuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FDMK d = new FDMK();
+            this.Hide();
+            d.ShowDialog();
+            this.Show();
+        }
+
+        private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login l = new Login();
+            l.ShowDialog();
+            this.Close();
+        }
+
+        private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Chon c = new Chon();
+            c.ShowDialog();
+            this.Close();
+        }
+
+        private void sảnPhẩmToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BCSP BC1 = new BCSP();
+            this.Hide();
+            BC1.ShowDialog();
+            this.Show();
+        }
+
+        private void doanhThuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BCDT BC2 = new BCDT();
+            this.Hide();
+            BC2.ShowDialog();
+            this.Show();
+        }
     }
 }

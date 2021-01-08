@@ -127,11 +127,14 @@
   <data name="pngtree-cartoon-contact-icon-download-png-image_4455641" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pngtree-cartoon-contact-icon-download-png-image_4455641.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="3296" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\3296.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="14081" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1408.png_860 (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="unnamed" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\unnamed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="14083" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1408.png_860 (1)3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="article_1545499513_253" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\article_1545499513_253.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -142,11 +145,11 @@
   <data name="13407661" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\13407661.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pngtree-delete--icon-in-trendy-style-isolated-background-png-image_4859881" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pngtree-delete--icon-in-trendy-style-isolated-background-png-image_4859881.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="23992796-login-icon-or-button-login-login-button-login-icon-login-sign-icon-button-sign-sign-in-word-text-red" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\23992796-login-icon-or-button-login-login-button-login-icon-login-sign-icon-button-sign-sign-in-word-text-red.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon-04" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon-04.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="14082" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1408.png_860 (1)2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -154,25 +157,25 @@
   <data name="1408.png_860 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1408.png_860 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1340766" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1340766.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pngtree-delete--icon-in-trendy-style-isolated-background-png-image_48598811" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pngtree-delete--icon-in-trendy-style-isolated-background-png-image_48598811.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="1408.png_860" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1408.png_860.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pngtree-delete--icon-in-trendy-style-isolated-background-png-image_48598811" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pngtree-delete--icon-in-trendy-style-isolated-background-png-image_48598811.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pngtree-delete--icon-in-trendy-style-isolated-background-png-image_4859881" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pngtree-delete--icon-in-trendy-style-isolated-background-png-image_4859881.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="14083" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1408.png_860 (1)3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="1340766" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1340766.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="14081" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1408.png_860 (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="3296" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3296.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pngtree-cartoon-contact-icon-download-png-image_44556411" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pngtree-cartoon-contact-icon-download-png-image_44556411.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icon-04" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon-04.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="anh-nen-dien-thoai-sieu-de-thuong_085452780" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\anh-nen-dien-thoai-sieu-de-thuong_085452780.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

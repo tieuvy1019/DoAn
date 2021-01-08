@@ -26,7 +26,7 @@ namespace DOAN
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection(@"Data Source=21AK22-COM\MSSQLSERVER01;Initial Catalog=demo;Integrated Security=True");
+            SqlConnection conn = new SqlConnection(@"Data Source=LAPTOP-4NRRL3NS\MSSQLSERVER01;Initial Catalog=demo;Integrated Security=True");
             
             
                 conn.Open();
