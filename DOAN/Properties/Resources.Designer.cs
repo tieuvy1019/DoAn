@@ -73,6 +73,76 @@ namespace DOAN.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1340766 {
+            get {
+                object obj = ResourceManager.GetObject("1340766", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _13407661 {
+            get {
+                object obj = ResourceManager.GetObject("13407661", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1408_png_860 {
+            get {
+                object obj = ResourceManager.GetObject("1408.png_860", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1408_png_860__1_ {
+            get {
+                object obj = ResourceManager.GetObject("1408.png_860 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _14081 {
+            get {
+                object obj = ResourceManager.GetObject("14081", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _14082 {
+            get {
+                object obj = ResourceManager.GetObject("14082", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _14083 {
+            get {
+                object obj = ResourceManager.GetObject("14083", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _23992796_login_icon_or_button_login_login_button_login_icon_login_sign_icon_button_sign_sign_in_word_text_red {
             get {
                 object obj = ResourceManager.GetObject("23992796-login-icon-or-button-login-login-button-login-icon-login-sign-icon-butto" +
@@ -104,9 +174,59 @@ namespace DOAN.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icon_04 {
+            get {
+                object obj = ResourceManager.GetObject("icon-04", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap KH {
             get {
                 object obj = ResourceManager.GetObject("KH", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngtree_cartoon_contact_icon_download_png_image_4455641 {
+            get {
+                object obj = ResourceManager.GetObject("pngtree-cartoon-contact-icon-download-png-image_4455641", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngtree_cartoon_contact_icon_download_png_image_44556411 {
+            get {
+                object obj = ResourceManager.GetObject("pngtree-cartoon-contact-icon-download-png-image_44556411", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngtree_delete__icon_in_trendy_style_isolated_background_png_image_4859881 {
+            get {
+                object obj = ResourceManager.GetObject("pngtree-delete--icon-in-trendy-style-isolated-background-png-image_4859881", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngtree_delete__icon_in_trendy_style_isolated_background_png_image_48598811 {
+            get {
+                object obj = ResourceManager.GetObject("pngtree-delete--icon-in-trendy-style-isolated-background-png-image_48598811", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

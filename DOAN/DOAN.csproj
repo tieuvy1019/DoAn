@@ -80,6 +80,12 @@
     <Compile Include="FNV.Designer.cs">
       <DependentUpon>FNV.cs</DependentUpon>
     </Compile>
+    <Compile Include="FSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FSP.Designer.cs">
+      <DependentUpon>FSP.cs</DependentUpon>
+    </Compile>
     <Compile Include="HOADON.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -107,6 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FNV.resx">
       <DependentUpon>FNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FSP.resx">
+      <DependentUpon>FSP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -169,6 +178,42 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\KH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1408.png_860.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1408.png_860 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1408.png_860 %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1408.png_860 %281%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-cartoon-contact-icon-download-png-image_4455641.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1408.png_860 %281%293.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1340766.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-delete--icon-in-trendy-style-isolated-background-png-image_4859881.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-cartoon-contact-icon-download-png-image_44556411.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-delete--icon-in-trendy-style-isolated-background-png-image_48598811.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13407661.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-04.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

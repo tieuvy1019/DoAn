@@ -26,5 +26,21 @@ namespace DOAN
         {
 
         }
+
+        private void nhânViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FNV v = new FNV();
+            this.Hide();
+            v.ShowDialog();
+            this.Show();
+        }
+
+        private void sảnPhẩmToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FSP f= new FSP();
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
+        }
     }
 }

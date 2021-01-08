@@ -10,18 +10,19 @@ using System.Windows.Forms;
 
 namespace DOAN
 {
-    public partial class FNV : Form
+    public partial class FSP : Form
     {
-        public FNV()
+        public FSP()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void label6_Click(object sender, EventArgs e)
         {
 
         }
-        private void FNV_Load(object sender, EventArgs e)
+
+        private void FSP_Load(object sender, EventArgs e)
         {
             try
             {
@@ -31,27 +32,36 @@ namespace DOAN
                 List<NHANVIEN> listNV = context.NHANVIENs.ToList();
                 List<SANPHAM> listSP = context.SANPHAMs.ToList();
                 List<TAIKHOAN> listTK = context.TAIKHOANs.ToList();
-                BindGrid(listNV);
+                BindGrid(listSP);
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
         }
-        private void BindGrid(List<NHANVIEN> listNV)
+        private void BindGrid(List<SANPHAM> listSP)
         {
             dataGridView1.Rows.Clear();
-            foreach (var item in listNV)
+            foreach (var item in listSP)
             {
                 int index = dataGridView1.Rows.Add();
-                dataGridView1.Rows[index].Cells[0].Value = item.MANV;
-                dataGridView1.Rows[index].Cells[1].Value = item.TENNV;
-                dataGridView1.Rows[index].Cells[2].Value = item.NGAYSINH;
-                dataGridView1.Rows[index].Cells[3].Value = item.DIACHI;
-                dataGridView1.Rows[index].Cells[4].Value = item.SDT;
-                dataGridView1.Rows[index].Cells[5].Value = item.TENDANGNHAP;
+                dataGridView1.Rows[index].Cells[0].Value = item.MASP;
+                dataGridView1.Rows[index].Cells[1].Value = item.TENSP;
+                dataGridView1.Rows[index].Cells[2].Value = item.DONVITINH;
+                dataGridView1.Rows[index].Cells[3].Value = item.LOAI;
+                dataGridView1.Rows[index].Cells[4].Value = item.XUATXU;
+                dataGridView1.Rows[index].Cells[5].Value = item.NGAYSANXUAT;
+                dataGridView1.Rows[index].Cells[6].Value = item.HANSUDUNG;
+                dataGridView1.Rows[index].Cells[7].Value = item.DONGIA;
             }
         }
+
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             textBox1.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
@@ -60,6 +70,8 @@ namespace DOAN
             textBox4.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
             textBox5.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
             textBox6.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
+            textBox7.Text = dataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString();
+            textBox8.Text = dataGridView1.Rows[e.RowIndex].Cells[7].Value.ToString();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -67,31 +79,35 @@ namespace DOAN
             NV context = new NV();
             try
             {
-                if (textBox1.Text == "" || textBox2.Text == "" || textBox3.Text == "" || textBox4.Text == "" || textBox5.Text == "" || textBox6.Text == "")
-                    throw new Exception("Vui lòng nhập đầy đủ thông tin Nhân viên!");
-                NHANVIEN n = new NHANVIEN()
+                if (textBox1.Text == "" || textBox2.Text == "" || textBox3.Text == "" || textBox4.Text == "" || textBox5.Text == "" || textBox6.Text == "" || textBox7.Text == "" || textBox8.Text == "")
+                    throw new Exception("Vui lòng nhập đầy đủ thông tin Sản phẩm!");
+                SANPHAM s = new SANPHAM()
                 {
-                    MANV = textBox1.Text,
-                    TENNV = textBox2.Text,
-                    NGAYSINH = DateTime.Parse( textBox3.Text),
-                    DIACHI = textBox4.Text,
-                    SDT = textBox5.Text,
-                    TENDANGNHAP=textBox6.Text
+                    MASP = textBox1.Text,
+                    TENSP = textBox2.Text,
+                    DONVITINH = textBox3.Text,
+                    LOAI = textBox4.Text,
+                    XUATXU = textBox5.Text,
+                    NGAYSANXUAT = DateTime.Parse(textBox6.Text),
+                    HANSUDUNG = DateTime.Parse(textBox7.Text),
+                    DONGIA = int.Parse(textBox8.Text)
                 };
-                context.NHANVIENs.Add(n);
+                context.SANPHAMs.Add(s);
                 //context.SaveChanges();
                 List<HOADON> listHD = context.HOADONs.ToList();
                 List<CTHD> listCT = context.CTHDs.ToList();
                 List<NHANVIEN> listNV = context.NHANVIENs.ToList();
                 List<SANPHAM> listSP = context.SANPHAMs.ToList();
                 List<TAIKHOAN> listTK = context.TAIKHOANs.ToList();
-                BindGrid(listNV);
+                BindGrid(listSP);
                 textBox1.Text = "";
                 textBox2.Text = "";
                 textBox3.Text = "";
                 textBox4.Text = "";
                 textBox5.Text = "";
                 textBox6.Text = "";
+                textBox7.Text = "";
+                textBox8.Text = "";
                 MessageBox.Show("Thêm mới dữ liệu thành công!", "Thông báo", MessageBoxButtons.OK);
             }
             catch (Exception ex)
@@ -105,32 +121,34 @@ namespace DOAN
             NV context = new NV();
             try
             {
-                NHANVIEN dbDelete = context.NHANVIENs.FirstOrDefault(p => p.MANV == textBox1.Text);
+                SANPHAM dbDelete = context.SANPHAMs.FirstOrDefault(p => p.MASP == textBox1.Text);
                 if (dbDelete != null)
                 {
                     DialogResult dr = MessageBox.Show("Xác nhận xóa?", "YES/NO", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                     if (dr == DialogResult.Yes)
                     {
-                        context.NHANVIENs.Remove(dbDelete);
+                        context.SANPHAMs.Remove(dbDelete);
                         //context.SaveChanges();
                         List<HOADON> listHD = context.HOADONs.ToList();
                         List<CTHD> listCT = context.CTHDs.ToList();
                         List<NHANVIEN> listNV = context.NHANVIENs.ToList();
                         List<SANPHAM> listSP = context.SANPHAMs.ToList();
                         List<TAIKHOAN> listTK = context.TAIKHOANs.ToList();
-                        BindGrid(listNV);
+                        BindGrid(listSP);
                         textBox1.Text = "";
                         textBox2.Text = "";
                         textBox3.Text = "";
                         textBox4.Text = "";
                         textBox5.Text = "";
                         textBox6.Text = "";
+                        textBox7.Text = "";
+                        textBox8.Text = "";
                         MessageBox.Show("Xoá dữ liệu thành công!");
                     }
                 }
                 else
                 {
-                    throw new Exception("Không tìm thấy MNV cần xóa!");
+                    throw new Exception("Không tìm thấy MSP cần xóa!");
                 }
             }
             catch (Exception ex)
@@ -143,7 +161,5 @@ namespace DOAN
         {
             this.Close();
         }
-
-        
     }
 }
