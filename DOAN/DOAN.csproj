@@ -93,6 +93,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SANPHAM.cs" />
     <Compile Include="TAIKHOAN.cs" />
+    <EmbeddedResource Include="BanHang.resx">
+      <DependentUpon>BanHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Chon.resx">
       <DependentUpon>Chon.cs</DependentUpon>
     </EmbeddedResource>
@@ -151,6 +154,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\3296.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thiet-ke-shop-thoi-trang.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
