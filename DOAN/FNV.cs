@@ -79,7 +79,7 @@ namespace DOAN
                     TENDANGNHAP=textBox6.Text
                 };
                 context.NHANVIENs.Add(n);
-                //context.SaveChanges();
+                context.SaveChanges();
                 List<HOADON> listHD = context.HOADONs.ToList();
                 List<CTHD> listCT = context.CTHDs.ToList();
                 List<NHANVIEN> listNV = context.NHANVIENs.ToList();
@@ -112,7 +112,7 @@ namespace DOAN
                     if (dr == DialogResult.Yes)
                     {
                         context.NHANVIENs.Remove(dbDelete);
-                        //context.SaveChanges();
+                        context.SaveChanges();
                         List<HOADON> listHD = context.HOADONs.ToList();
                         List<CTHD> listCT = context.CTHDs.ToList();
                         List<NHANVIEN> listNV = context.NHANVIENs.ToList();

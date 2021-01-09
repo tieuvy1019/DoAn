@@ -20,9 +20,9 @@ namespace DOAN {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("demoDataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("demoDataSet1")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class demoDataSet : global::System.Data.DataSet {
+    public partial class demoDataSet1 : global::System.Data.DataSet {
         
         private SANPHAMDataTable tableSANPHAM;
         
@@ -30,7 +30,7 @@ namespace DOAN {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public demoDataSet() {
+        public demoDataSet1() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace DOAN {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        protected demoDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected demoDataSet1(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -127,7 +127,7 @@ namespace DOAN {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            demoDataSet cln = ((demoDataSet)(base.Clone()));
+            demoDataSet1 cln = ((demoDataSet1)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -199,9 +199,9 @@ namespace DOAN {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "demoDataSet";
+            this.DataSetName = "demoDataSet1";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/demoDataSet.xsd";
+            this.Namespace = "http://tempuri.org/demoDataSet1.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableSANPHAM = new SANPHAMDataTable();
@@ -225,7 +225,7 @@ namespace DOAN {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            demoDataSet ds = new demoDataSet();
+            demoDataSet1 ds = new demoDataSet1();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -574,7 +574,7 @@ namespace DOAN {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                demoDataSet ds = new demoDataSet();
+                demoDataSet1 ds = new demoDataSet1();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -890,7 +890,7 @@ namespace DOAN {
         }
     }
 }
-namespace DOAN.demoDataSetTableAdapters {
+namespace DOAN.demoDataSet1TableAdapters {
     
     
     /// <summary>
@@ -1095,25 +1095,27 @@ SELECT MASP, TENSP, DONVITINH, LOAI, XUATXU, NGAYSANXUAT, HANSUDUNG, DONGIA FROM
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT MASP, TENSP, DONVITINH, LOAI, XUATXU, NGAYSANXUAT, HANSUDUNG, DONGIA FROM " +
-                "dbo.SANPHAM";
+                "dbo.SANPHAM\r\nWHERE MASP=@MASP";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
-            this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = "SELECT MASP, TENSP, DONVITINH, LOAI, XUATXU, NGAYSANXUAT, HANSUDUNG, DONGIA FROM " +
-                "dbo.SANPHAM";
-            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@MASP", global::System.Data.SqlDbType.VarChar, 10, global::System.Data.ParameterDirection.Input, 0, 0, "MASP", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(demoDataSet.SANPHAMDataTable dataTable) {
+        public virtual int Fill(demoDataSet1.SANPHAMDataTable dataTable, string MASP) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((MASP == null)) {
+                throw new global::System.ArgumentNullException("MASP");
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(MASP));
+            }
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
             }
@@ -1125,33 +1127,15 @@ SELECT MASP, TENSP, DONVITINH, LOAI, XUATXU, NGAYSANXUAT, HANSUDUNG, DONGIA FROM
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual demoDataSet.SANPHAMDataTable GetData() {
+        public virtual demoDataSet1.SANPHAMDataTable GetData(string MASP) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            demoDataSet.SANPHAMDataTable dataTable = new demoDataSet.SANPHAMDataTable();
-            this.Adapter.Fill(dataTable);
-            return dataTable;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
-        public virtual int FillBy(demoDataSet.SANPHAMDataTable dataTable) {
-            this.Adapter.SelectCommand = this.CommandCollection[1];
-            if ((this.ClearBeforeFill == true)) {
-                dataTable.Clear();
+            if ((MASP == null)) {
+                throw new global::System.ArgumentNullException("MASP");
             }
-            int returnValue = this.Adapter.Fill(dataTable);
-            return returnValue;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual demoDataSet.SANPHAMDataTable GetDataBy() {
-            this.Adapter.SelectCommand = this.CommandCollection[1];
-            demoDataSet.SANPHAMDataTable dataTable = new demoDataSet.SANPHAMDataTable();
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(MASP));
+            }
+            demoDataSet1.SANPHAMDataTable dataTable = new demoDataSet1.SANPHAMDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -1159,14 +1143,14 @@ SELECT MASP, TENSP, DONVITINH, LOAI, XUATXU, NGAYSANXUAT, HANSUDUNG, DONGIA FROM
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(demoDataSet.SANPHAMDataTable dataTable) {
+        public virtual int Update(demoDataSet1.SANPHAMDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(demoDataSet dataSet) {
+        public virtual int Update(demoDataSet1 dataSet) {
             return this.Adapter.Update(dataSet, "SANPHAM");
         }
         
@@ -1584,7 +1568,7 @@ SELECT MASP, TENSP, DONVITINH, LOAI, XUATXU, NGAYSANXUAT, HANSUDUNG, DONGIA FROM
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateUpdatedRows(demoDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(demoDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._sANPHAMTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.SANPHAM.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
@@ -1603,7 +1587,7 @@ SELECT MASP, TENSP, DONVITINH, LOAI, XUATXU, NGAYSANXUAT, HANSUDUNG, DONGIA FROM
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateInsertedRows(demoDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(demoDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._sANPHAMTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.SANPHAM.Select(null, null, global::System.Data.DataViewRowState.Added);
@@ -1621,7 +1605,7 @@ SELECT MASP, TENSP, DONVITINH, LOAI, XUATXU, NGAYSANXUAT, HANSUDUNG, DONGIA FROM
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateDeletedRows(demoDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(demoDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._sANPHAMTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.SANPHAM.Select(null, null, global::System.Data.DataViewRowState.Deleted);
@@ -1663,7 +1647,7 @@ SELECT MASP, TENSP, DONVITINH, LOAI, XUATXU, NGAYSANXUAT, HANSUDUNG, DONGIA FROM
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public virtual int UpdateAll(demoDataSet dataSet) {
+        public virtual int UpdateAll(demoDataSet1 dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }

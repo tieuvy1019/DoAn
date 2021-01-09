@@ -184,6 +184,26 @@ namespace DOAN.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap blog_wp_login {
+            get {
+                object obj = ResourceManager.GetObject("blog-wp-login", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bo_tuyen_tap_nhung_hinh_nen_chu_lon_un_in_vui_nhon_cho_dien_thoai_13_450x800_1 {
+            get {
+                object obj = ResourceManager.GetObject("bo-tuyen-tap-nhung-hinh-nen-chu-lon-un-in-vui-nhon-cho-dien-thoai-13-450x800-1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icon_04 {
             get {
                 object obj = ResourceManager.GetObject("icon-04", resourceCulture);

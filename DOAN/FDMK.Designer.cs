@@ -43,10 +43,11 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = global::DOAN.Properties.Resources.anh_nen_dien_thoai_sieu_de_thuong_085452780;
-            this.pictureBox1.Location = new System.Drawing.Point(-1, -5);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(674, 575);
+            this.pictureBox1.Size = new System.Drawing.Size(671, 571);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
