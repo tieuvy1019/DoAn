@@ -7,7 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using DOAN.Properties;
+using DOAN.Model;
 namespace DOAN
 {
     public partial class BanHang : Form
@@ -66,7 +67,7 @@ namespace DOAN
             try
             {
                 if (textBox1.Text == "" || textBox2.Text == "" || textBox3.Text == "" || textBox4.Text == "" || textBox5.Text == "" || textBox6.Text == "")
-                    throw new Exception("Vui lòng nhập đầy đủ thông tin Nhân viên!");
+                    throw new Exception("Vui lòng nhập đầy đủ thông tin Hoá đơn!");
                 CTHD C = new CTHD()
                 {
                     MACTHD = textBox1.Text,
@@ -91,6 +92,8 @@ namespace DOAN
                 textBox4.Text = "";
                 textBox5.Text = "";
                 textBox6.Text = "";
+                string ThanhTien = textBox6.Text+textBox3.Text;
+                textBox4.Text = ThanhTien.ToString();
                 MessageBox.Show("Thêm mới dữ liệu thành công!", "Thông báo", MessageBoxButtons.OK);
             }
             catch (Exception ex)
@@ -98,7 +101,8 @@ namespace DOAN
                 MessageBox.Show(ex.Message);
             }
         }
-
+        private List<Add> add = new List<Add>();
+        private int number = 0;
         private void button3_Click(object sender, EventArgs e)
         {
             NV context = new NV();
@@ -140,12 +144,65 @@ namespace DOAN
 
         private void button4_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            Login l = new Login();
+            l.ShowDialog();
             this.Close();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBox6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            printDocument1.Print();
+        }
+
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            Image image = Resources.hm;
+            e.Graphics.DrawImage(image, 0, 0, image.Width, image.Height);
+            e.Graphics.DrawString("Ngày: " + DateTime.Now.ToShortDateString(), new Font("Arial", 12, FontStyle.Regular), Brushes.Black, new Point(25, 160));
+            e.Graphics.DrawString("Mã nhân viên: " + textBox4.Text.Trim(), new Font("Arial", 12, FontStyle.Regular), Brushes.Black, new Point(25, 190));
+            e.Graphics.DrawString("=========================================================================== ", new Font("Arial", 12, FontStyle.Regular), Brushes.Black, new Point(25, 235));
+            e.Graphics.DrawString("Mã sản phẩm: ", new Font("Arial", 12, FontStyle.Regular), Brushes.Black, new Point(30, 255));
+            e.Graphics.DrawString("Số lượng: ", new Font("Arial", 12, FontStyle.Regular), Brushes.Black, new Point(380, 255));
+            e.Graphics.DrawString("Đơn giá: ", new Font("Arial", 12, FontStyle.Regular), Brushes.Black, new Point(510, 255));
+            e.Graphics.DrawString("Tổng: ", new Font("Arial", 12, FontStyle.Regular), Brushes.Black, new Point(660, 255));
+            e.Graphics.DrawString("=========================================================================== ", new Font("Arial", 12, FontStyle.Regular), Brushes.Black, new Point(25, 270));
+            int y = 295;
+            for (int i = 0; i < add.Count; i++)
+            {
+                number++;
+                if (number <= 3)
+                {
+                    e.Graphics.DrawString(add[i].MASP, new Font("Arial", 12, FontStyle.Regular), Brushes.Black, new Point(30, y));
+                    e.Graphics.DrawString(add[i].SOLUONG.ToString(), new Font("Arial", 12, FontStyle.Regular), Brushes.Black, new Point(400, y));
+                    e.Graphics.DrawString(add[i].DONGIA.ToString(), new Font("Arial", 12, FontStyle.Regular), Brushes.Black, new Point(525, y));
+                    //e.Graphics.DrawString(add[i].Tong.ToString(), new Font("Arial", 12, FontStyle.Regular), Brushes.Black, new Point(675, y));
+                    y = y + 30;
+                }
+                else
+                {
+                    number = 0;
+                    e.HasMorePages = true;
+                }
+            }
+            e.Graphics.DrawString("=========================================================================== ", new Font("Arial", 12, FontStyle.Regular), Brushes.Black, new Point(25, y));
+            e.Graphics.DrawString("Thành tiền: " + textBox4.Text.Trim(), new Font("Arial", 12, FontStyle.Regular), Brushes.Black, new Point(550, y + 30));
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

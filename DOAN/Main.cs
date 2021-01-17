@@ -59,13 +59,6 @@ namespace DOAN
             this.Close();
         }
 
-        private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Chon c = new Chon();
-            c.ShowDialog();
-            this.Close();
-        }
 
         private void sảnPhẩmToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -81,6 +74,11 @@ namespace DOAN
             this.Hide();
             BC2.ShowDialog();
             this.Show();
+        }
+
+        private void hệThốngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

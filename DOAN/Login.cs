@@ -50,10 +50,24 @@ namespace DOAN
             SqlDataReader dta = cmd.ExecuteReader();
             if (dta.Read() == true)
             {
-                Chon v = new Chon();
-                this.Hide();
-                v.ShowDialog();
-                this.Show();
+                //Chon v = new Chon();
+                //this.Hide();
+                //v.ShowDialog();
+                //this.Show();
+                if(textBox1.Text == "ho")
+                {
+                    BanHang n = new BanHang();
+                    this.Hide();
+                    n.ShowDialog();
+                    this.Show();
+                }
+                else
+                {
+                    Main m = new Main();
+                    this.Hide();
+                    m.ShowDialog();
+                    this.Show();
+                }
             }
             else
             {
@@ -67,6 +81,16 @@ namespace DOAN
         }
 
         private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
         {
 
         }

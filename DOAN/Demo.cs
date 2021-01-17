@@ -4,12 +4,11 @@ namespace DOAN
     using System.Data.Entity;
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Linq;
-    using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
-    public partial class NV : DbContext
+
+    public partial class Demo : DbContext
     {
-        public NV()
-            : base("name=NV")
+        public Demo()
+            : base("name=Demo")
         {
         }
 

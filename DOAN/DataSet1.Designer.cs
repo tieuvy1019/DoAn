@@ -36,11 +36,11 @@ namespace DOAN {
         
         private global::System.Data.DataRelation relationFK_NHANVIEN_TAIKHOAN;
         
-        private global::System.Data.DataRelation relationFK__CTHD__MANV__4BAC3F29;
+        private global::System.Data.DataRelation relationFK__CTHD__MANV__5EBF139D;
         
-        private global::System.Data.DataRelation relationFK__CTHD__MASP__49C3F6B7;
+        private global::System.Data.DataRelation relationFK__CTHD__MASP__5CD6CB2B;
         
-        private global::System.Data.DataRelation relationFK__CTHD__SOHD__4AB81AF0;
+        private global::System.Data.DataRelation relationFK__CTHD__SOHD__5DCAEF64;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
@@ -299,9 +299,9 @@ namespace DOAN {
                 }
             }
             this.relationFK_NHANVIEN_TAIKHOAN = this.Relations["FK_NHANVIEN_TAIKHOAN"];
-            this.relationFK__CTHD__MANV__4BAC3F29 = this.Relations["FK__CTHD__MANV__4BAC3F29"];
-            this.relationFK__CTHD__MASP__49C3F6B7 = this.Relations["FK__CTHD__MASP__49C3F6B7"];
-            this.relationFK__CTHD__SOHD__4AB81AF0 = this.Relations["FK__CTHD__SOHD__4AB81AF0"];
+            this.relationFK__CTHD__MANV__5EBF139D = this.Relations["FK__CTHD__MANV__5EBF139D"];
+            this.relationFK__CTHD__MASP__5CD6CB2B = this.Relations["FK__CTHD__MASP__5CD6CB2B"];
+            this.relationFK__CTHD__SOHD__5DCAEF64 = this.Relations["FK__CTHD__SOHD__5DCAEF64"];
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -326,18 +326,18 @@ namespace DOAN {
                         this.tableTAIKHOAN.TENDANGNHAPColumn}, new global::System.Data.DataColumn[] {
                         this.tableNHANVIEN.TENDANGNHAPColumn}, false);
             this.Relations.Add(this.relationFK_NHANVIEN_TAIKHOAN);
-            this.relationFK__CTHD__MANV__4BAC3F29 = new global::System.Data.DataRelation("FK__CTHD__MANV__4BAC3F29", new global::System.Data.DataColumn[] {
+            this.relationFK__CTHD__MANV__5EBF139D = new global::System.Data.DataRelation("FK__CTHD__MANV__5EBF139D", new global::System.Data.DataColumn[] {
                         this.tableNHANVIEN.MANVColumn}, new global::System.Data.DataColumn[] {
                         this.tableCTHD.MANVColumn}, false);
-            this.Relations.Add(this.relationFK__CTHD__MANV__4BAC3F29);
-            this.relationFK__CTHD__MASP__49C3F6B7 = new global::System.Data.DataRelation("FK__CTHD__MASP__49C3F6B7", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__CTHD__MANV__5EBF139D);
+            this.relationFK__CTHD__MASP__5CD6CB2B = new global::System.Data.DataRelation("FK__CTHD__MASP__5CD6CB2B", new global::System.Data.DataColumn[] {
                         this.tableSANPHAM.MASPColumn}, new global::System.Data.DataColumn[] {
                         this.tableCTHD.MASPColumn}, false);
-            this.Relations.Add(this.relationFK__CTHD__MASP__49C3F6B7);
-            this.relationFK__CTHD__SOHD__4AB81AF0 = new global::System.Data.DataRelation("FK__CTHD__SOHD__4AB81AF0", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__CTHD__MASP__5CD6CB2B);
+            this.relationFK__CTHD__SOHD__5DCAEF64 = new global::System.Data.DataRelation("FK__CTHD__SOHD__5DCAEF64", new global::System.Data.DataColumn[] {
                         this.tableHOADON.SOHDColumn}, new global::System.Data.DataColumn[] {
                         this.tableCTHD.SOHDColumn}, false);
-            this.Relations.Add(this.relationFK__CTHD__SOHD__4AB81AF0);
+            this.Relations.Add(this.relationFK__CTHD__SOHD__5DCAEF64);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1845,7 +1845,7 @@ namespace DOAN {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public CTHDRow AddCTHDRow(string MACTHD, SANPHAMRow parentSANPHAMRowByFK__CTHD__MASP__49C3F6B7, HOADONRow parentHOADONRowByFK__CTHD__SOHD__4AB81AF0, NHANVIENRow parentNHANVIENRowByFK__CTHD__MANV__4BAC3F29, int SOLUONG, int DONGIA, int THANHTIEN) {
+            public CTHDRow AddCTHDRow(string MACTHD, SANPHAMRow parentSANPHAMRowByFK__CTHD__MASP__5CD6CB2B, HOADONRow parentHOADONRowByFK__CTHD__SOHD__5DCAEF64, NHANVIENRow parentNHANVIENRowByFK__CTHD__MANV__5EBF139D, int SOLUONG, int DONGIA, int THANHTIEN) {
                 CTHDRow rowCTHDRow = ((CTHDRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         MACTHD,
@@ -1855,14 +1855,14 @@ namespace DOAN {
                         SOLUONG,
                         DONGIA,
                         THANHTIEN};
-                if ((parentSANPHAMRowByFK__CTHD__MASP__49C3F6B7 != null)) {
-                    columnValuesArray[1] = parentSANPHAMRowByFK__CTHD__MASP__49C3F6B7[0];
+                if ((parentSANPHAMRowByFK__CTHD__MASP__5CD6CB2B != null)) {
+                    columnValuesArray[1] = parentSANPHAMRowByFK__CTHD__MASP__5CD6CB2B[0];
                 }
-                if ((parentHOADONRowByFK__CTHD__SOHD__4AB81AF0 != null)) {
-                    columnValuesArray[2] = parentHOADONRowByFK__CTHD__SOHD__4AB81AF0[0];
+                if ((parentHOADONRowByFK__CTHD__SOHD__5DCAEF64 != null)) {
+                    columnValuesArray[2] = parentHOADONRowByFK__CTHD__SOHD__5DCAEF64[0];
                 }
-                if ((parentNHANVIENRowByFK__CTHD__MANV__4BAC3F29 != null)) {
-                    columnValuesArray[3] = parentNHANVIENRowByFK__CTHD__MANV__4BAC3F29[0];
+                if ((parentNHANVIENRowByFK__CTHD__MANV__5EBF139D != null)) {
+                    columnValuesArray[3] = parentNHANVIENRowByFK__CTHD__MANV__5EBF139D[0];
                 }
                 rowCTHDRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowCTHDRow);
@@ -2285,11 +2285,11 @@ namespace DOAN {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public CTHDRow[] GetCTHDRows() {
-                if ((this.Table.ChildRelations["FK__CTHD__MASP__49C3F6B7"] == null)) {
+                if ((this.Table.ChildRelations["FK__CTHD__MASP__5CD6CB2B"] == null)) {
                     return new CTHDRow[0];
                 }
                 else {
-                    return ((CTHDRow[])(base.GetChildRows(this.Table.ChildRelations["FK__CTHD__MASP__49C3F6B7"])));
+                    return ((CTHDRow[])(base.GetChildRows(this.Table.ChildRelations["FK__CTHD__MASP__5CD6CB2B"])));
                 }
             }
         }
@@ -2378,11 +2378,11 @@ namespace DOAN {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public CTHDRow[] GetCTHDRows() {
-                if ((this.Table.ChildRelations["FK__CTHD__SOHD__4AB81AF0"] == null)) {
+                if ((this.Table.ChildRelations["FK__CTHD__SOHD__5DCAEF64"] == null)) {
                     return new CTHDRow[0];
                 }
                 else {
-                    return ((CTHDRow[])(base.GetChildRows(this.Table.ChildRelations["FK__CTHD__SOHD__4AB81AF0"])));
+                    return ((CTHDRow[])(base.GetChildRows(this.Table.ChildRelations["FK__CTHD__SOHD__5DCAEF64"])));
                 }
             }
         }
@@ -2566,11 +2566,11 @@ namespace DOAN {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public CTHDRow[] GetCTHDRows() {
-                if ((this.Table.ChildRelations["FK__CTHD__MANV__4BAC3F29"] == null)) {
+                if ((this.Table.ChildRelations["FK__CTHD__MANV__5EBF139D"] == null)) {
                     return new CTHDRow[0];
                 }
                 else {
-                    return ((CTHDRow[])(base.GetChildRows(this.Table.ChildRelations["FK__CTHD__MANV__4BAC3F29"])));
+                    return ((CTHDRow[])(base.GetChildRows(this.Table.ChildRelations["FK__CTHD__MANV__5EBF139D"])));
                 }
             }
         }
@@ -2750,10 +2750,10 @@ namespace DOAN {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public NHANVIENRow NHANVIENRow {
                 get {
-                    return ((NHANVIENRow)(this.GetParentRow(this.Table.ParentRelations["FK__CTHD__MANV__4BAC3F29"])));
+                    return ((NHANVIENRow)(this.GetParentRow(this.Table.ParentRelations["FK__CTHD__MANV__5EBF139D"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__CTHD__MANV__4BAC3F29"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__CTHD__MANV__5EBF139D"]);
                 }
             }
             
@@ -2761,10 +2761,10 @@ namespace DOAN {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public SANPHAMRow SANPHAMRow {
                 get {
-                    return ((SANPHAMRow)(this.GetParentRow(this.Table.ParentRelations["FK__CTHD__MASP__49C3F6B7"])));
+                    return ((SANPHAMRow)(this.GetParentRow(this.Table.ParentRelations["FK__CTHD__MASP__5CD6CB2B"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__CTHD__MASP__49C3F6B7"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__CTHD__MASP__5CD6CB2B"]);
                 }
             }
             
@@ -2772,10 +2772,10 @@ namespace DOAN {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public HOADONRow HOADONRow {
                 get {
-                    return ((HOADONRow)(this.GetParentRow(this.Table.ParentRelations["FK__CTHD__SOHD__4AB81AF0"])));
+                    return ((HOADONRow)(this.GetParentRow(this.Table.ParentRelations["FK__CTHD__SOHD__5DCAEF64"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__CTHD__SOHD__4AB81AF0"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__CTHD__SOHD__5DCAEF64"]);
                 }
             }
             

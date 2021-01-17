@@ -9,8 +9,6 @@ namespace DOAN
     [Table("SANPHAM")]
     public partial class SANPHAM
     {
-        internal object TAIKHOANs;
-
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public SANPHAM()
         {

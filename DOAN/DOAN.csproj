@@ -61,7 +61,7 @@
       <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1427.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.1016.290\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -116,6 +116,14 @@
     <Compile Include="BanHang.Designer.cs">
       <DependentUpon>BanHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="demoDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>demoDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="demoDataSet1.cs">
+      <DependentUpon>demoDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="demoDataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -152,6 +160,7 @@
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\Add.cs" />
     <Compile Include="NHANVIEN.cs" />
     <Compile Include="NV.cs" />
     <Compile Include="Program.cs" />
@@ -161,6 +170,9 @@
     <Compile Include="TAIKHOAN.cs" />
     <EmbeddedResource Include="BanHang.resx">
       <DependentUpon>BanHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BCDT.resx">
+      <DependentUpon>BCDT.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BCSP.resx">
       <DependentUpon>BCSP.cs</DependentUpon>
@@ -194,6 +206,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Report2.rdlc" />
     <None Include="DataSet1.xsc">
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </None>
@@ -204,6 +217,17 @@
     </None>
     <None Include="DataSet1.xss">
       <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="demoDataSet.xsc">
+      <DependentUpon>demoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="demoDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>demoDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="demoDataSet.xss">
+      <DependentUpon>demoDataSet.xsd</DependentUpon>
     </None>
     <None Include="demoDataSet1.xsc">
       <DependentUpon>demoDataSet1.xsd</DependentUpon>
@@ -295,6 +319,7 @@
     <None Include="Resources\blog-wp-login.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\hm.jpg" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

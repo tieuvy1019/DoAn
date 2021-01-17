@@ -44,6 +44,7 @@ create table CTHD
 	SOHD varchar(10) foreign key references HOADON,
 	MANV varchar(10) foreign key references NHANVIEN,
 	SOLUONG int,
+	DONGIA int,
 	THANHTIEN int,
 	constraint pk_CTHD primary key (MACTHD, MASP, SOHD, MANV)
 )
